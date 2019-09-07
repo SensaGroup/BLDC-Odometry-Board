@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Odometry)(type Legacy)(uri ${KIPRJMOD}/Lib/Odometry.lib)(options "")(descr ""))
+  (lib (name ODOMETRY-rescue)(type Legacy)(uri ${KIPRJMOD}/ODOMETRY-rescue.lib)(options "")(descr ""))
+)

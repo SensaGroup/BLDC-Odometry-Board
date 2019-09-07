@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRV8306HRSMT
+D Motor / Motion / Ignition Controllers & Drivers 38V Brushless-DC Smart Gate Driver With Trapezoidal Commutation 32-VQFN -40 to 125
+K
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8306&fileType=pdf
+$ENDCMP
+#
+#End Doc Library

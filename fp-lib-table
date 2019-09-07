@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Odometry)(type KiCad)(uri ${KIPRJMOD}/Lib/Odometry.pretty)(options "")(descr ""))
+)

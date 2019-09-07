@@ -1,0 +1,351 @@
+EESchema Schematic File Version 4
+LIBS:ODOMETRY-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date "2019-03-11"
+Rev "1.0"
+Comp "SENSA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 5C86A83B
+P 800 1050
+F 0 "J12" H 719 633 50  0000 C CNN
+F 1 "Sensor_Conn_1" H 719 720 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 800 1050 50  0001 C CNN
+F 3 "~" H 800 1050 50  0001 C CNN
+	1    800  1050
+	-1   0    0    1   
+$EndComp
+Text GLabel 1050 1150 2    50   Input ~ 0
+S1_5V
+Wire Wire Line
+	1000 850  1050 850 
+Wire Wire Line
+	1000 1150 1050 1150
+Wire Wire Line
+	1000 1050 1050 1050
+Wire Wire Line
+	1000 950  1050 950 
+$Comp
+L Connector_Generic:Conn_01x04 J13
+U 1 1 5C86C6AD
+P 1850 1050
+F 0 "J13" H 1769 633 50  0000 C CNN
+F 1 "Sensor_Conn_2" H 1769 720 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1850 1050 50  0001 C CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
+	-1   0    0    1   
+$EndComp
+Text GLabel 2100 1150 2    50   Input ~ 0
+S2_5V
+Wire Wire Line
+	2050 850  2100 850 
+Wire Wire Line
+	2050 1150 2100 1150
+Wire Wire Line
+	2050 1050 2100 1050
+Wire Wire Line
+	2050 950  2100 950 
+$Comp
+L Connector_Generic:Conn_01x04 J14
+U 1 1 5C86D45A
+P 2950 1050
+F 0 "J14" H 2869 633 50  0000 C CNN
+F 1 "Sensor_Conn_3" H 2869 720 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 2950 1050 50  0001 C CNN
+F 3 "~" H 2950 1050 50  0001 C CNN
+	1    2950 1050
+	-1   0    0    1   
+$EndComp
+Text GLabel 3200 1150 2    50   Input ~ 0
+S3_5V
+Wire Wire Line
+	3150 850  3200 850 
+Wire Wire Line
+	3150 1150 3200 1150
+Wire Wire Line
+	3150 1050 3200 1050
+Wire Wire Line
+	3150 950  3200 950 
+$Comp
+L Connector_Generic:Conn_01x04 J15
+U 1 1 5C86D476
+P 4000 1050
+F 0 "J15" H 3919 633 50  0000 C CNN
+F 1 "Sensor_Conn_4" H 3919 720 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4000 1050 50  0001 C CNN
+F 3 "~" H 4000 1050 50  0001 C CNN
+	1    4000 1050
+	-1   0    0    1   
+$EndComp
+Text GLabel 4250 1150 2    50   Input ~ 0
+S4_5V
+Wire Wire Line
+	4200 850  4250 850 
+Wire Wire Line
+	4200 1150 4250 1150
+Wire Wire Line
+	4200 1050 4250 1050
+Wire Wire Line
+	4200 950  4250 950 
+$Comp
+L ODOMETRY-rescue:mainboard-rescue_ULN2003A-mainboard-cache U8
+U 1 1 5C8AE23D
+P 1750 2650
+F 0 "U8" H 1750 3211 50  0000 C CNN
+F 1 "ULN2003A" H 1750 3124 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm" H 1800 2000 50  0001 L CNN
+F 3 "" H 1850 2550 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 2550 2    50   Input ~ 0
+S1_5V
+Text GLabel 2200 2650 2    50   Input ~ 0
+S2_5V
+Text GLabel 2200 2750 2    50   Input ~ 0
+S3_5V
+Text GLabel 2200 2850 2    50   Input ~ 0
+S4_5V
+Wire Wire Line
+	2150 2350 2200 2350
+Wire Wire Line
+	2150 2450 2200 2450
+Wire Wire Line
+	2150 2550 2200 2550
+Wire Wire Line
+	2150 2650 2200 2650
+NoConn ~ 2150 2950
+$Comp
+L power:+5V #PWR0189
+U 1 1 5C8B1A39
+P 2200 3150
+F 0 "#PWR0189" H 2200 3000 50  0001 C CNN
+F 1 "+5V" V 2215 3276 50  0000 L CNN
+F 2 "" H 2200 3150 50  0001 C CNN
+F 3 "" H 2200 3150 50  0001 C CNN
+	1    2200 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3150 2200 3150
+$Comp
+L power:GND #PWR0190
+U 1 1 5C8B22AF
+P 1750 3400
+F 0 "#PWR0190" H 1750 3150 50  0001 C CNN
+F 1 "GND" H 1755 3231 50  0000 C CNN
+F 2 "" H 1750 3400 50  0001 C CNN
+F 3 "" H 1750 3400 50  0001 C CNN
+	1    1750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3350 1750 3400
+Text HLabel 1300 2550 0    50   Input ~ 0
+S1_PWR
+Text HLabel 1300 2650 0    50   Input ~ 0
+S2_PWR
+Text HLabel 1300 2750 0    50   Input ~ 0
+S3_PWR
+Text HLabel 1300 2850 0    50   Input ~ 0
+S4_PWR
+NoConn ~ 1350 2950
+Wire Wire Line
+	1300 2550 1350 2550
+Wire Wire Line
+	1300 2650 1350 2650
+Wire Wire Line
+	1300 2750 1350 2750
+Wire Wire Line
+	1300 2850 1350 2850
+$Comp
+L Relay:G5Q-1A K1
+U 1 1 5C8B7CD6
+P 3750 2750
+F 0 "K1" H 4080 2794 50  0000 L CNN
+F 1 "G5Q-1A" H 4080 2707 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_Omron-G5Q-1A" H 4100 2700 50  0001 L CNN
+F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 4850 2450 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/omron-electronics-inc-emc-div/G5Q-1A4-DC12/Z223-ND/355241" H 3750 2750 50  0001 C CNN "Digikey"
+	1    3750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0191
+U 1 1 5C8B8E58
+P 3550 1850
+F 0 "#PWR0191" H 3550 1700 50  0001 C CNN
+F 1 "+12V" H 3565 2019 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 2400 0    50   Input ~ 0
+LED_PWR
+Text GLabel 2250 2400 2    50   Input ~ 0
+RELAY_PWR
+Text GLabel 3550 3100 3    50   Input ~ 0
+RELAY_PWR
+Wire Wire Line
+	3550 3050 3550 3100
+$Comp
+L power:+5V #PWR0192
+U 1 1 5C8BEBD5
+P 1050 850
+F 0 "#PWR0192" H 1050 700 50  0001 C CNN
+F 1 "+5V" V 1065 976 50  0000 L CNN
+F 2 "" H 1050 850 50  0001 C CNN
+F 3 "" H 1050 850 50  0001 C CNN
+	1    1050 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0193
+U 1 1 5C8C6EB1
+P 2100 850
+F 0 "#PWR0193" H 2100 700 50  0001 C CNN
+F 1 "+5V" V 2115 976 50  0000 L CNN
+F 2 "" H 2100 850 50  0001 C CNN
+F 3 "" H 2100 850 50  0001 C CNN
+	1    2100 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0194
+U 1 1 5C8C7268
+P 3200 850
+F 0 "#PWR0194" H 3200 700 50  0001 C CNN
+F 1 "+5V" V 3215 976 50  0000 L CNN
+F 2 "" H 3200 850 50  0001 C CNN
+F 3 "" H 3200 850 50  0001 C CNN
+	1    3200 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0195
+U 1 1 5C8C76DF
+P 4250 850
+F 0 "#PWR0195" H 4250 700 50  0001 C CNN
+F 1 "+5V" V 4265 976 50  0000 L CNN
+F 2 "" H 4250 850 50  0001 C CNN
+F 3 "" H 4250 850 50  0001 C CNN
+	1    4250 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J16
+U 1 1 5C8C9E5C
+P 4200 2050
+F 0 "J16" H 4280 2041 50  0000 L CNN
+F 1 "LED_CONN" H 4280 1954 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 4200 2050 50  0001 C CNN
+F 3 "~" H 4200 2050 50  0001 C CNN
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5C8CAB8F
+P 3800 2100
+F 0 "D1" V 3756 2179 50  0000 L CNN
+F 1 "D" V 3843 2179 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 3800 2100 50  0001 C CNN
+F 3 "~" H 3800 2100 50  0001 C CNN
+	1    3800 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0196
+U 1 1 5C8CAFE3
+P 3950 3100
+F 0 "#PWR0196" H 3950 2850 50  0001 C CNN
+F 1 "GND" H 3955 2931 50  0000 C CNN
+F 2 "" H 3950 3100 50  0001 C CNN
+F 3 "" H 3950 3100 50  0001 C CNN
+	1    3950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3050 3950 3100
+Wire Wire Line
+	3800 2250 3800 2300
+Wire Wire Line
+	3800 2300 3950 2300
+Wire Wire Line
+	3950 2300 3950 2450
+Wire Wire Line
+	3950 2300 4000 2300
+Wire Wire Line
+	4000 2300 4000 2150
+Connection ~ 3950 2300
+Wire Wire Line
+	4000 2050 4000 1900
+Wire Wire Line
+	4000 1900 3950 1900
+Wire Wire Line
+	3800 1900 3800 1950
+Wire Wire Line
+	3950 1900 3950 1850
+Connection ~ 3950 1900
+Wire Wire Line
+	3950 1900 3800 1900
+$Comp
+L power:+12V #PWR0197
+U 1 1 5C8CEB24
+P 3950 1850
+F 0 "#PWR0197" H 3950 1700 50  0001 C CNN
+F 1 "+12V" H 3965 2019 50  0000 C CNN
+F 2 "" H 3950 1850 50  0001 C CNN
+F 3 "" H 3950 1850 50  0001 C CNN
+	1    3950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1850 3550 2450
+Text HLabel 1050 1050 2    50   Input ~ 0
+SENSOR_CLOCK
+Text HLabel 2100 1050 2    50   Input ~ 0
+SENSOR_CLOCK
+Text HLabel 3200 1050 2    50   Input ~ 0
+SENSOR_CLOCK
+Text HLabel 4250 1050 2    50   Input ~ 0
+SENSOR_CLOCK
+Text HLabel 1050 950  2    50   Input ~ 0
+S1_DATA
+Text HLabel 2100 950  2    50   Input ~ 0
+S2_DATA
+Text HLabel 3200 950  2    50   Input ~ 0
+S3_DATA
+Text HLabel 4250 950  2    50   Input ~ 0
+S4_DATA
+Wire Wire Line
+	1300 2400 1350 2400
+Wire Wire Line
+	1350 2400 1350 2350
+Wire Wire Line
+	1350 2400 1350 2450
+Connection ~ 1350 2400
+Wire Wire Line
+	2200 2350 2200 2400
+Wire Wire Line
+	2200 2400 2250 2400
+Wire Wire Line
+	2200 2400 2200 2450
+Connection ~ 2200 2400
+Wire Wire Line
+	2150 2750 2200 2750
+Wire Wire Line
+	2150 2850 2200 2850
+$EndSCHEMATC

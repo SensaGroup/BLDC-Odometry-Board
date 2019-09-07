@@ -1,0 +1,358 @@
+EESchema Schematic File Version 4
+LIBS:ODOMETRY-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date "2019-03-11"
+Rev "1.0"
+Comp "SENSA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ODOMETRY-rescue:mainboard-rescue_NTR2101P-mainboard-cache Q?
+U 1 1 5C9C064B
+P 1550 2650
+AR Path="/5C9C064B" Ref="Q?"  Part="1" 
+AR Path="/5C9B800F/5C9C064B" Ref="Q2"  Part="1" 
+F 0 "Q2" V 1800 2850 50  0000 L CNN
+F 1 "DMP2100U" V 1800 2350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1750 2575 50  0001 L CIN
+F 3 "" H 1550 2650 50  0001 L CNN
+	1    1550 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C9C0651
+P 1000 1150
+AR Path="/5C9C0651" Ref="J?"  Part="1" 
+AR Path="/5C9B800F/5C9C0651" Ref="J17"  Part="1" 
+F 0 "J17" H 919 833 50  0000 C CNN
+F 1 "12V" H 919 920 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 1150 50  0001 C CNN
+F 3 "~" H 1000 1150 50  0001 C CNN
+	1    1000 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C9C0657
+P 1000 2650
+AR Path="/5C9C0657" Ref="J?"  Part="1" 
+AR Path="/5C9B800F/5C9C0657" Ref="J18"  Part="1" 
+F 0 "J18" H 919 2333 50  0000 C CNN
+F 1 "5V" H 919 2420 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1000 2650 50  0001 C CNN
+F 3 "~" H 1000 2650 50  0001 C CNN
+	1    1000 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C065D
+P 1250 2900
+AR Path="/5C9C065D" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C065D" Ref="#PWR0198"  Part="1" 
+F 0 "#PWR0198" H 1250 2650 50  0001 C CNN
+F 1 "GND" H 1300 2750 50  0000 R CNN
+F 2 "" H 1250 2900 50  0001 C CNN
+F 3 "" H 1250 2900 50  0001 C CNN
+	1    1250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2650 1250 2650
+Wire Wire Line
+	1200 2550 1350 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C0665
+P 1550 2900
+AR Path="/5C9C0665" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C0665" Ref="#PWR0199"  Part="1" 
+F 0 "#PWR0199" H 1550 2650 50  0001 C CNN
+F 1 "GND" H 1600 2750 50  0000 R CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2650 1250 2900
+Wire Wire Line
+	1550 2850 1550 2900
+$Comp
+L Transistor_FET:SUD50P04-08 Q?
+U 1 1 5C9C0675
+P 1500 1150
+AR Path="/5C9C0675" Ref="Q?"  Part="1" 
+AR Path="/5C9B800F/5C9C0675" Ref="Q1"  Part="1" 
+F 0 "Q1" V 1837 1150 50  0000 C CNN
+F 1 "SUD50P04-08" V 1750 1150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 1695 1075 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/65594/sud50p04-08.pdf" H 1500 1150 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/vishay-siliconix/SUD50P04-08-GE3/SUD50P04-08-GE3CT-ND/2442163" V 1500 1150 50  0001 C CNN "Digikey"
+	1    1500 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1200 1050 1300 1050
+Wire Wire Line
+	1200 1150 1250 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C067D
+P 1250 1850
+AR Path="/5C9C067D" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C067D" Ref="#PWR0200"  Part="1" 
+F 0 "#PWR0200" H 1250 1600 50  0001 C CNN
+F 1 "GND" H 1300 1700 50  0000 R CNN
+F 2 "" H 1250 1850 50  0001 C CNN
+F 3 "" H 1250 1850 50  0001 C CNN
+	1    1250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C9C0683
+P 1500 1650
+AR Path="/5C9C0683" Ref="R?"  Part="1" 
+AR Path="/5C9B800F/5C9C0683" Ref="R27"  Part="1" 
+F 0 "R27" H 1570 1694 50  0000 L CNN
+F 1 "12K" H 1570 1607 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 1650 50  0001 C CNN
+F 3 "~" H 1500 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C9C0689
+P 1850 1650
+AR Path="/5C9C0689" Ref="C?"  Part="1" 
+AR Path="/5C9B800F/5C9C0689" Ref="C22"  Part="1" 
+F 0 "C22" H 1965 1694 50  0000 L CNN
+F 1 "15nF/50V" H 1965 1607 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1888 1500 50  0001 C CNN
+F 3 "~" H 1850 1650 50  0001 C CNN
+	1    1850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5C9C0690
+P 1850 1250
+AR Path="/5C9C0690" Ref="D?"  Part="1" 
+AR Path="/5C9B800F/5C9C0690" Ref="D2"  Part="1" 
+F 0 "D2" V 1806 1329 50  0000 L CNN
+F 1 "D_Zener" V 1893 1329 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1850 1250 50  0001 C CNN
+F 3 "~" H 1850 1250 50  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/diodes-incorporated/MMSZ5240BS-7-F/MMSZ5240BS-FDICT-ND/768831" V 1850 1250 50  0001 C CNN "Digikey"
+	1    1850 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C0696
+P 1500 1850
+AR Path="/5C9C0696" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C0696" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 1500 1600 50  0001 C CNN
+F 1 "GND" H 1550 1700 50  0000 R CNN
+F 2 "" H 1500 1850 50  0001 C CNN
+F 3 "" H 1500 1850 50  0001 C CNN
+	1    1500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C069C
+P 1850 1850
+AR Path="/5C9C069C" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C069C" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 1850 1600 50  0001 C CNN
+F 1 "GND" H 1900 1700 50  0000 R CNN
+F 2 "" H 1850 1850 50  0001 C CNN
+F 3 "" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1800 1850 1850
+Wire Wire Line
+	1500 1800 1500 1850
+Wire Wire Line
+	1250 1150 1250 1850
+Wire Wire Line
+	1500 1350 1500 1450
+Wire Wire Line
+	1850 1400 1850 1450
+Wire Wire Line
+	1850 1450 1500 1450
+Connection ~ 1850 1450
+Wire Wire Line
+	1850 1450 1850 1500
+Connection ~ 1500 1450
+Wire Wire Line
+	1500 1450 1500 1500
+Wire Wire Line
+	1700 1050 1850 1050
+Wire Wire Line
+	1850 1050 1850 1100
+$Comp
+L Device:C C?
+U 1 1 5C9C06BA
+P 2650 1250
+AR Path="/5C9C06BA" Ref="C?"  Part="1" 
+AR Path="/5C9B800F/5C9C06BA" Ref="C24"  Part="1" 
+F 0 "C24" H 2765 1294 50  0000 L CNN
+F 1 "100nF" H 2765 1207 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2688 1100 50  0001 C CNN
+F 3 "~" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1050 2650 1000
+Connection ~ 1850 1050
+Wire Wire Line
+	2650 1050 2650 1100
+Connection ~ 2650 1050
+Wire Wire Line
+	2650 1400 2650 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C06D0
+P 2650 1850
+AR Path="/5C9C06D0" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C06D0" Ref="#PWR0204"  Part="1" 
+F 0 "#PWR0204" H 2650 1600 50  0001 C CNN
+F 1 "GND" H 2700 1700 50  0000 R CNN
+F 2 "" H 2650 1850 50  0001 C CNN
+F 3 "" H 2650 1850 50  0001 C CNN
+	1    2650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C9C06DC
+P 3200 1250
+AR Path="/5C9C06DC" Ref="R?"  Part="1" 
+AR Path="/5C9B800F/5C9C06DC" Ref="R28"  Part="1" 
+F 0 "R28" H 3270 1294 50  0000 L CNN
+F 1 "1K" H 3270 1207 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" V 3130 1250 50  0001 C CNN
+F 3 "~" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C9C06E2
+P 3200 1600
+AR Path="/5C9C06E2" Ref="D?"  Part="1" 
+AR Path="/5C9B800F/5C9C06E2" Ref="D3"  Part="1" 
+F 0 "D3" V 3237 1485 50  0000 R CNN
+F 1 "LED" V 3150 1485 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 3200 1600 50  0001 C CNN
+F 3 "~" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C9C06E8
+P 3200 1850
+AR Path="/5C9C06E8" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5C9C06E8" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 3200 1600 50  0001 C CNN
+F 1 "GND" H 3250 1700 50  0000 R CNN
+F 2 "" H 3200 1850 50  0001 C CNN
+F 3 "" H 3200 1850 50  0001 C CNN
+	1    3200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1400 3200 1450
+Wire Wire Line
+	3200 1750 3200 1850
+Wire Wire Line
+	2650 1050 3200 1050
+Wire Wire Line
+	3200 1050 3200 1100
+Text HLabel 2350 2500 1    50   Input ~ 0
+5V
+Text HLabel 2650 1000 1    50   Input ~ 0
+12V
+Wire Wire Line
+	1850 1050 2650 1050
+$Comp
+L Device:C C?
+U 1 1 5CA69CE5
+P 1850 2750
+AR Path="/5CA69CE5" Ref="C?"  Part="1" 
+AR Path="/5C9B800F/5CA69CE5" Ref="C3"  Part="1" 
+F 0 "C3" H 1965 2794 50  0000 L CNN
+F 1 "100nF" H 1965 2707 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1888 2600 50  0001 C CNN
+F 3 "~" H 1850 2750 50  0001 C CNN
+	1    1850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA6A4CF
+P 1850 2900
+AR Path="/5CA6A4CF" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5CA6A4CF" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 1850 2650 50  0001 C CNN
+F 1 "GND" H 1900 2750 50  0000 R CNN
+F 2 "" H 1850 2900 50  0001 C CNN
+F 3 "" H 1850 2900 50  0001 C CNN
+	1    1850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 5CA8D7D7
+P 2350 2750
+F 0 "C5" H 2466 2794 50  0000 L CNN
+F 1 "220uF/50V" H 2466 2707 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_10x10.2" H 2388 2600 50  0001 C CNN
+F 3 "~" H 2350 2750 50  0001 C CNN
+	1    2350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2550 2350 2500
+Wire Wire Line
+	1750 2550 1850 2550
+Wire Wire Line
+	1850 2600 1850 2550
+Connection ~ 1850 2550
+Wire Wire Line
+	1850 2550 2350 2550
+Wire Wire Line
+	2350 2550 2350 2600
+Connection ~ 2350 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5CA8E8F1
+P 2350 2900
+AR Path="/5CA8E8F1" Ref="#PWR?"  Part="1" 
+AR Path="/5C9B800F/5CA8E8F1" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 2350 2650 50  0001 C CNN
+F 1 "GND" H 2400 2750 50  0000 R CNN
+F 2 "" H 2350 2900 50  0001 C CNN
+F 3 "" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
